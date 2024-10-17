@@ -10,7 +10,7 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: Digital Geolocation Tools for Archival Research
+title: Aerial Time Lapse Tools Survey
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/
@@ -18,7 +18,7 @@ title: Digital Geolocation Tools for Archival Research
 title-icon: 
 # description, keywords, and image for meta tags
 # these do not visibility appear on the pages, but used for SEO
-description: "Presentation for Fall 2024 Information Landscapes Series"
+description: "Presentation for 2024 University of Idaho GIS Day Short Talks"
 keywords: 
 # featured-image is added to metadata tags for social media sharing
 # use a relative path to image in this repository or full URL
@@ -33,7 +33,7 @@ github_username: aweymo-ui
 # year or date published
 pub_year: 2024
 # location of code, the full url to your github repository
-source-code: https://github.com/aweymo-ui/geolocation
+source-code: https://github.com/aweymo-ui/aerial_timelapse
 
 ##########
 # URL VARIABLES [optional!!]
@@ -47,7 +47,7 @@ url: https://aweymo-ui.github.io/
 # use baseurl to add subsection of the domain, e.g. /workshop-template-b
 # on gh-pages this is a / followed by the name of the repository
 # baseurl is your github repository's name prefixed with a /
-baseurl: /geolocation
+baseurl: /aerial_timelapse
 
 
 ##########
