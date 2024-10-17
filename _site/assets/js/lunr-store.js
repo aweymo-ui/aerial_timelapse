@@ -24,5 +24,5 @@ var store = [
     { 
         "url": "/aerial_timelapse/",
         "title": "Home",
-        "text": "Presentation Transcript and Slides for the 2024 U of I Information Landscape Series slides Contents: Introduction Platform Comparison Google Earth Engine Output &amp; Conclusion Content: CC BY-NC-ND 4.0 Andrew Weymouth 2024 (get source code). Theme: Variation on workshop-template-b by evanwill"
+        "text": "Presentation Transcript and Slides for the 2024 U of I GIS Day Series slides Contents: Introduction Platform Comparison Google Earth Engine Output &amp; Conclusion Content: CC BY-NC-ND 4.0 Andrew Weymouth 2024 (get source code). Theme: Variation on workshop-template-b by evanwill"
     }];
