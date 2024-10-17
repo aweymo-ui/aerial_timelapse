@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Google Earth Engine | Digital Geolocation Tools for Archival Research</title>
+<meta name="description" content="Presentation for Fall 2024 Information Landscapes Series">
+<meta name="keywords" content="">
+<meta name="author" content="Andrew Weymouth">
+<link rel="icon" type="image/png" href="http://localhost:4000/geolocation/favicon.png">
+
+<!--
+  _      __         __        __           ______               __     __     
+ | | /| / /__  ____/ /__ ___ / /  ___  ___/_  __/__ __ _  ___  / /__ _/ /____ 
+ | |/ |/ / _ \/ __/  '_/(_-</ _ \/ _ \/ _ \/ / / -_)  ' \/ _ \/ / _ `/ __/ -_)
+ |__/|__/\___/_/ /_/\_\/___/_//_/\___/ .__/_/  \__/_/_/_/ .__/_/\_,_/\__/\__/ 
+                                    /_/                /_/                    
+
+    built with workshop-template-b, evanwill, https://github.com/evanwill/workshop-template-b
+--> 
+   
+<!-- Open Graph meta -->
+<meta property="og:title" content="Google Earth Engine | Digital Geolocation Tools for Archival Research" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Presentation for Fall 2024 Information Landscapes Series" />
+<meta property="og:image" content="http://localhost:4000/geolocation/images/banner.gif" />
+<meta property="og:site_name" content="Digital Geolocation Tools for Archival Research" />
+<meta property="og:url" content="http://localhost:4000/geolocation/content/3_gee.html" />
+<meta property="og:locale" content="en_US" />
+<!-- schema.org JSON-LD -->
+<script type="application/ld+json">{ "@context":"http://schema.org", "@type":"WebPage", "headline":"Google Earth Engine | Digital Geolocation Tools for Archival Research", "author": { "@type":"Person", "name":"Andrew Weymouth"}, "description":"Presentation for Fall 2024 Information Landscapes Series", "image": "http://localhost:4000/geolocation/images/banner.gif", "url":"http://localhost:4000/geolocation/content/3_gee.html" }</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/geolocation/assets/lib/spotlight.min.css">
+<link rel="stylesheet" href="/geolocation/assets/lib/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/geolocation/assets/css/styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+
+<!-- Last build date: 2024-10-17 -->
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+    <header>
+    <nav class="navbar navbar-light pb-lg-0 border-bottom" style="background-color: #F0F8FF;">
+    <div class="container">
+        <h1 class="navbar-brand" style="white-space: normal;"><a href="/geolocation/">
+            
+            Digital Geolocation Tools for Archival Research
+        </a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+            <ul class="navbar-nav nav-tabs justify-content-end">
+            
+                <li class="nav-item">
+                    <a class="nav-link p-3 h-100" href="/geolocation/content/1_intro.html">
+                        
+                            Introduction
+                        
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link p-3 h-100" href="/geolocation/content/2_platform.html">
+                        
+                            Platform Comparison
+                        
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link active p-3 h-100" href="/geolocation/content/3_gee.html">
+                        
+                            Google Earth Engine
+                        
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link p-3 h-100" href="/geolocation/content/4_outcomes.html">
+                        
+                            Output & Conclusion
+                        
+                    </a>
+                </li>
+            
+            </ul>  
+        </div>
+    </div>
+</nav>
+
+    </header>
+
+    <main id="maincontent" role="main" aria-label="Content" class="flex-shrink-0">
+      
+      <div class="container my-4">
+<h1>Google Earth Engine</h1>
+
+<div class="ms-5 mb-3 border-bottom">
+    </div>
+    
+<div class="my-4">
+
+<p>While I did find the learning curve on this resource to be steep, its adaptability, variety of datasets and convenient export settings make this a good geolocation resource to end on. Like the USGS Earth Explorer, you will need to sign a waiver that you will be using the resource for non-profit reasons, but after signing you should have near immediate access. Once inside, the interface looks a bit like a text editor if you do any coding. On the left pane you have the scripts that you’ve written along with examples of other scripts you can automatically generate to help you learn the programmatic language as well as the Google Earth Engine Docs to drill down on specific functionalities. The center pane is where you will write and run the code. On the right pane your console acts essentially as a terminal where error messages will feed out and also where data will be printed after running a script and the task pane will have a list of the scripts you have run along with their status.</p>
+
+<p>The intention of the code was to create a time lapse over Moscow, ID that would span the greatest amount of time.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Define the center of the 83843 area code in Moscow, Idaho
+var moscowCenter = ee.Geometry.Point([-117.0028, 46.7326]); // Approximate center of 83843
+
+// Define a square boundary around Moscow, covering an area of interest (e.g., 5 square miles ~ 12.95 square km)
+var moscowBoundary = moscowCenter.buffer(1810).bounds(); // 1810 meters radius approximates a 5 square mile area
+
+// Load the ImageCollection and filter by the defined area
+var collection = ee.ImageCollection('USDA/NAIP/DOQQ')
+  .filterBounds(moscowBoundary)
+  .sort('system:time_start');
+</code></pre></div></div>
+
+<p>To begin, we are defining our perimeter geographically around the 83843 area code. Next we are going to define the dataset we want to pull from to create this visualization. While Google Earth Engine contains over 900 datasets, for a beginner like me, I was unable to combine datasets to increase the span of time in any given area. I believe this is due to the datasets having slightly different metadata and contrasting color outputs so, for this script, we are only pulling from the National Agriculture Imagery Program dataset, which goes back to about 1980 and in line 13 you can see I am requesting the earliest possible image of this defined area.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Get the earliest image
+var earliestImage = collection.first();
+var earliestDate;
+
+if (earliestImage) {
+  earliestDate = ee.Date(earliestImage.get('system:time_start')).format('YYYY-MM-dd').getInfo();
+  print('Earliest Available Date:', earliestDate);
+
+  // Define the updated date range
+  var startDate = earliestDate; // Use earliest date found
+  var endDate = '2024-06-01'; // End date
+
+  // Filter the ImageCollection with the updated date range
+  collection = collection.filterDate(startDate, endDate);
+
+  // Function to get the image with the largest area for each year
+  var getLargestImagePerYear = function(year) {
+    var yearlyCollection = collection.filter(ee.Filter.calendarRange(year, year, 'year'));
+    
+    // Compute the intersection of each image with the boundary and calculate area
+    var largestImage = yearlyCollection.map(function(image) {
+      var intersection = image.geometry().intersection(moscowBoundary, 1); // Added error margin of 1 meter
+      return image.set({'intersectionArea': intersection.area()});
+    }).sort('intersectionArea', false).first(); // Sort by area and get the largest
+
+    return largestImage;
+  };
+
+  // Get the years from the collection
+  var years = ee.List(collection.aggregate_array('system:time_start'))
+    .map(function(date) {
+      return ee.Date(date).get('year');
+    }).distinct();
+
+  // Map over years to get the largest image per year
+  var largestImagesCollection = ee.ImageCollection(years.map(getLargestImagePerYear))
+    .sort('system:time_start'); // Ensure chronological order
+</code></pre></div></div>
+
+<p>Moving  to line 28, another complication that I encountered was that not all of the satellite photographs that capture part of the area necessarily cover all of it, so some of the early iterations of this script had little slivers of the terrain that were unhelpful in understanding geographic change over time. To solve this I am asking in code for just the largest image for each year to balance getting the best coverage with the best yield of images. Starting around line 41, we are asking in code to assemble these images chronologically from earliest to most recent and compile them in a video format and export them in red, green and blue color formatting.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> // Function to prepare images for video export and add date metadata
+  var prepareForExport = function(image) {
+    var date = ee.Date(image.get('system:time_start')).format('YYYY-MM-dd');
+    
+    // Visualize the image with appropriate bands and scale
+    var visualImage = image.visualize({
+      bands: ['R', 'G', 'B'],
+      min: 0,
+      max: 255
+    });
+    
+    // Annotate the image with the date (add metadata)
+    return visualImage.set({'date': date});
+  };
+
+  // Apply the function to the largest images collection
+  var annotatedCollection = largestImagesCollection.map(prepareForExport);
+
+  // Print dates of all images to the console in chronological order
+  annotatedCollection.aggregate_array('date').evaluate(function(dates) {
+    print('Image Dates:', dates);
+  }, function(error) {
+    print('Error:', error);
+  });
+</code></pre></div></div>
+<p><strong>In a perfect world</strong> I was hoping to create a code that would automatically overlay the date information of each photograph over its image, so the viewer would have a better frame of reference, but the best I was able to do was have this date information print when the script is run in the console. This information can then be fairly easily added over the frames using video editing software like Adobe Premiere</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // Define video export parameters with increased display time
+  var videoParams = {
+    region: moscowBoundary,
+    dimensions: 900, // Adjust as needed
+    crs: 'EPSG:3857',
+    framesPerSecond: 0.5, // Increase time on screen to 2 seconds per image
+    description: 'Moscow_TimeLapse',
+    folder: 'EarthEngine'
+  };
+
+  // Export the video
+  Export.video.toDrive({
+    collection: annotatedCollection,
+    description: videoParams.description,
+    folder: videoParams.folder,
+    dimensions: videoParams.dimensions,
+    framesPerSecond: videoParams.framesPerSecond,
+    crs: videoParams.crs,
+    region: videoParams.region
+  });
+
+} else {
+  print('No images found within the specified boundary.');
+}
+</code></pre></div></div>
+
+<p>Finally, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you generate directly into your Drive. The exported video files can be converted into GIF files and loaded onto project sites like we see below.</p>
+
+
+</div>
+
+</div>
+      
+    </main>
+
+    <footer class="site-footer bg-light-blue mt-auto">
+  <div class="container">
+    <nav class="mt-3 mb-4">
+      <ul class="nav nav-pills nav-fill">
+        
+        <li class="nav-item"><a class="nav-link h3" href="/geolocation/content/1_intro.html">Introduction</a></li>
+        
+        <li class="nav-item"><a class="nav-link h3" href="/geolocation/content/2_platform.html">Platform Comparison</a></li>
+        
+        <li class="nav-item"><a class="nav-link h3 active" href="/geolocation/content/3_gee.html">Google Earth Engine</a></li>
+        
+        <li class="nav-item"><a class="nav-link h3" href="/geolocation/content/4_outcomes.html">Output & Conclusion</a></li>
+        
+      </ul>
+    </nav>
+    <div class="row align-items-center pb-5">
+        <div id="footer-title" class="col-md">
+          <a class="h5" href="/geolocation/">Digital Geolocation Tools for Archival Research</a>
+          <br>
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0, </a> 2024 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a>
+        </div>
+        <div class="col-md">
+          
+          <script>
+            function site_search() {
+              var query = document.getElementById("site-search").value;
+              window.open("/geolocation/search/index.html?q=" + encodeURIComponent(query), "_self" );
+            }
+          </script>
+          <form class="form-inline my-2 my-lg-0 float-end" role="search" id="search" onsubmit="site_search(); return false;">
+            <div class="input-group">
+              <input id="site-search" class="form-control" type="text" placeholder="Search" aria-label="Search box">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> </svg><span class="visually-hidden">submit search</span></button>
+              </div>
+            </div>
+          </form>
+          
+        </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bootstrap JS bundle -->
+<script src="/geolocation/assets/lib/bootstrap.bundle.min.js"></script>
+<!-- load other optional js -->
+
+
+<script src="/geolocation/assets/lib/lazysizes.min.js" async></script>
+<script src="/geolocation/assets/lib/spotlight.min.js" defer></script>
+<script>
+    // When the user scrolls down from the top of the document, show the button
+    window.onscroll = function () {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("scroll-to-top").style.display = "block";
+            document.getElementById("scroll-to-top").style.color = "#00448c"; // Change button color to #00448c
+        } else {
+            document.getElementById("scroll-to-top").style.display = "none";
+        }
+    }
+    // scroll to top function
+    function scrollToTop() {
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    }
+</script>
+<button id="scroll-to-top" type="button" class="btn btn-link btn-lg" onclick="scrollToTop();" title="Back to Top" aria-label="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/> </svg>
+</button>
+
+
+
+  </body>
+
+</html>
