@@ -8,7 +8,7 @@ gallery: true
 
 * [slides](https://indd.adobe.com/view/b44e37fa-8f53-454c-9103-e17d5fcd8a59){:target="_blank" rel="noopener"}
 
-This presentation provides a survey of five platforms that researchers can use to generate aerial time-lapse visualizations, highlighting their unique strengths, weaknesses, and the technical skills required for each.
+**This presentation provides a survey of five platforms** that researchers can use to generate aerial time-lapse visualizations, highlighting their unique strengths, weaknesses and the technical skills required for each.
 
 {% include toc.html %}
 
