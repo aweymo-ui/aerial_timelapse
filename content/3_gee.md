@@ -4,7 +4,15 @@ nav: Google Earth Engine
 gallery: true
 ---
 
-While I did find the learning curve on this resource to be steep, its adaptability, variety of datasets and convenient export settings make this a good geolocation resource to end on. Like the USGS Earth Explorer, you will need to sign a waiver that you will be using the resource for non-profit reasons, but after signing you should have near immediate access. Once inside, the interface looks a bit like a text editor if you do any coding. On the left pane you have the scripts that you’ve written along with examples of other scripts you can automatically generate to help you learn the programmatic language as well as the Google Earth Engine Docs to drill down on specific functionalities. The center pane is where you will write and run the code. On the right pane your console acts essentially as a terminal where error messages will feed out and also where data will be printed after running a script and the task pane will have a list of the scripts you have run along with their status.
+**While I did find the learning curve on this resource to be steep**, its adaptability, variety of datasets and convenient export settings make this a good geolocation resource to end on. Like the USGS Earth Explorer, you will need to sign a waiver that you will be using the resource for non-profit reasons, but after signing you should have near immediate access. 
+
+{% include gallery-figure.html img="aerial_01.jpeg" width="100%" alt="Screen cap of the Google Earth Engine interface" caption="Google Earth Engine Interface" %}
+
+**Once inside**, the interface looks a bit like a text editor if you do any coding. On the left pane you have the scripts that you’ve written along with examples of other scripts you can automatically generate to help you learn the programmatic language as well as the [Google Earth Engine Docs](https://developers.google.com/earth-engine/guides/getstarted){:target="_blank" rel="noopener"} to drill down on specific functionalities. The center pane is where you will write and run the code. On the right pane your console acts essentially as a terminal where error messages will feed out and also where data will be printed after running a script and the task pane will have a list of the scripts you have run along with their status.
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
 The intention of the code was to create a time lapse over Moscow, ID that would span the greatest amount of time. 
 
@@ -21,7 +29,13 @@ var collection = ee.ImageCollection('USDA/NAIP/DOQQ')
   .sort('system:time_start');
   ```
 
-  To begin, we are defining our perimeter geographically around the 83843 area code. Next we are going to define the dataset we want to pull from to create this visualization. While Google Earth Engine contains over 900 datasets, for a beginner like me, I was unable to combine datasets to increase the span of time in any given area. I believe this is due to the datasets having slightly different metadata and contrasting color outputs so, for this script, we are only pulling from the National Agriculture Imagery Program dataset, which goes back to about 1980 and in line 13 you can see I am requesting the earliest possible image of this defined area. 
+  **To begin**, we are defining our perimeter geographically around the 83843 area code. Next we are going to define the dataset we want to pull from to create this visualization. While Google Earth Engine contains over 900 datasets, for a beginner like me, I was unable to combine datasets to increase the span of time in any given area. 
+
+  <div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+  
+  I believe this is due to the datasets having slightly different metadata and contrasting color outputs so, for this script, we are only pulling from the National Agriculture Imagery Program dataset, which goes back to about 1980 and in line 13 you can see I am requesting the earliest possible image of this defined area. 
 
   ```
 // Get the earliest image
@@ -63,7 +77,13 @@ if (earliestImage) {
     .sort('system:time_start'); // Ensure chronological order
 ```
 
-Moving  to line 28, another complication that I encountered was that not all of the satellite photographs that capture part of the area necessarily cover all of it, so some of the early iterations of this script had little slivers of the terrain that were unhelpful in understanding geographic change over time. To solve this I am asking in code for just the largest image for each year to balance getting the best coverage with the best yield of images. Starting around line 41, we are asking in code to assemble these images chronologically from earliest to most recent and compile them in a video format and export them in red, green and blue color formatting. 
+**Another complication I encountered** was that not all of the satellite photographs that capture part of the area necessarily cover all of it, so some of the early iterations of this script had little slivers of the terrain that were unhelpful in understanding geographic change over time. 
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
+To solve this I am asking in code for just the largest image for each year to balance getting the best coverage with the best yield of images. As outlined in the second code snippet, we are asking in code to assemble these images chronologically from earliest to most recent and compile them in a video format and export them in red, green and blue color formatting. 
 
 ```
  // Function to prepare images for video export and add date metadata
@@ -119,4 +139,4 @@ Moving  to line 28, another complication that I encountered was that not all of 
 }
 ```
 
-Finally, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you generate directly into your Drive. The exported video files can be converted into GIF files and loaded onto project sites like we see below. 
+**Finally**, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you generate directly into your Drive. The exported video files can be converted into GIF files and loaded onto project sites like we will see on the following slide. 

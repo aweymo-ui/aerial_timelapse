@@ -6,6 +6,9 @@ gallery: true
 
 While there have been aerial photography initiatives active for over 100 years and major digital repositories now contain over 900 collections (referred to as ‘datasets’ in the GIS discipline), compositing this data together to form a comprehensive time lapse of a defined area is surprisingly difficult. Here are a few different freely available resources and their different strengths and weaknesses. 
 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
 **Beginning with a few bad ones** you don’t want to spend your time on (like I did):
 
@@ -19,13 +22,13 @@ While there have been aerial photography initiatives active for over 100 years a
   <tr>
     <td style="border: 1px solid black; padding: 8px;">Google Earth Pro</td>
     <td style="border: 1px solid black; padding: 8px;"></td>
-    <td style="border: 1px solid black; padding: 8px;"><li>This desktop version of Google Earth is where some older online references will point you towards for this functionality, but this is an outdated model that Google appears to have abandoned for more contemporary platforms</li> <li>The “Movie Maker” tool that would carry out this action no longer appears to be functional</li></td>
+    <td style="border: 1px solid black; padding: 8px;"><li>This desktop version of Google Earth is where some older online references will point you towards but appears to be an outdated model Google appears to have abandoned for more contemporary platforms</li> <li>The “Movie Maker” tool that would carry out this action no longer appears to be functional</li></td>
     <td style="border: 1px solid black; padding: 8px;"></td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px;">USGS Earth Explorer</td>
-    <td style="border: 1px solid black; padding: 8px;">If you want to source aerial photographs and put them into a time lapse manually using a resource like Adobe Premiere or After Effects, this database contains material that predates many of the other resources, sometimes as far back as 1950, whereas the others only reach as far back as 1980.</td>
-    <td style="border: 1px solid black; padding: 8px;"><li>As mentioned, only still images can be exported, so the time lapse function and overlaying images need to be done manually</li> <li>Extremely non-intuitive interface.</li></td>
+    <td style="border: 1px solid black; padding: 8px;">If you want to source aerial photographs and put them into a time lapse manually using a resource like Adobe Premiere or After Effects, this database contains material that has more historical reach than other resources, sometimes as far back as 1950, whereas the others only reach as far back as 1980.</td>
+    <td style="border: 1px solid black; padding: 8px;"><li>As mentioned, only still images can be exported individually, so the time lapse function and overlaying images need to be done manually on another platform</li> <li>Additionally, as an outsider to GIS, I found the navigation and interface very unintuitive</li></td>
     <td style="border: 1px solid black; padding: 8px;"></td>
   </tr>
   <tr>
@@ -71,8 +74,4 @@ While there have been aerial photography initiatives active for over 100 years a
     </td>
   </tr>
 </table>
-
-<div class="symbol-container">
-    <p class="symbol">&#10042;</p>
-</div>
 
