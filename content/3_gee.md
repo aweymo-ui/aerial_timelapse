@@ -4,9 +4,11 @@ nav: Google Earth Engine
 gallery: true
 ---
 
-While I did find the learning curve on this resource to be steep, its adaptability, variety of datasets and convenient export settings make this a good geolocation resource to end on. Like the USGS Earth Explorer, you will need to sign a waiver that you will be using the resource for non-profit reasons, but after signing you should have near immediate access. Once inside, the interface looks a bit like a text editor if you do any coding. On the left pane you have the scripts that you’ve written along with examples of other scripts you can automatically generate to help you learn the programmatic language as well as the Google Earth Engine Docs to drill down on specific functionalities. The center pane is where you will write and run the code. On the right pane your console acts essentially as a terminal where error messages will feed out and also where data will be printed after running a script and the task pane will have a list of the scripts you have run along with their status.
+While I found the learning curve for this resource steep, its adaptability, variety of datasets, and convenient export settings make it an excellent choice for geolocation. Like the USGS Earth Explorer, you’ll need to sign a waiver confirming that you’ll use the resource for non-profit purposes, but you should gain near-immediate access after signing.
 
-The intention of the code was to create a time lapse over Moscow, ID that would span the greatest amount of time. 
+The interface resembles a text editor familiar to those with coding experience. The left pane displays the scripts you’ve written, along with examples of other scripts you can automatically generate to aid your learning of the programmatic language. You’ll also find the Google Earth Engine documentation here for specific functionalities. The center pane is where you write and run your code, while the right pane features a console that functions as a terminal, displaying error messages and printing data after script execution. The task pane lists the scripts you’ve run along with their status.
+
+The intention of the code is to create a time lapse over Moscow, ID, covering the longest possible time span.
 
 ```
 // Define the center of the 83843 area code in Moscow, Idaho
