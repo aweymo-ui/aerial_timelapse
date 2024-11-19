@@ -12,4 +12,8 @@ gallery: true
 
 ## Conclusion
 
-In conclusion, I hope this has been an insightful comparison of these platforms and their various strengths and weaknesses for researchers of varying technical abilities. Understanding these nuances can help empower researchers to draw new insights and help guide developments towards these functionalities in the future. 
+In conclusion, I hope this has been an insightful comparison of these platforms and their various strengths and weaknesses for researchers of varying technical abilities. If students or faculty reach out for a recommendation for a tool that can use and they only need 20 or so years of coverage, I am very likely to recommend the ArcGIS World Imagery Wayback platform as an extremely intuitive option. 
+
+That said, I am personally very interested in creating more work in Google Earth Engine and the seemingly limitless ability you have to produce still, moving and interactive maps. I also feel like I am missing some central concepts of the code that would weed out so many of the false positives, incomplete images and datasets with conflicting color configurations.
+
+Thank you for your time!

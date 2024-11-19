@@ -4,10 +4,14 @@ nav: Platform Comparison
 gallery: true
 --- 
 
-While there have been aerial photography initiatives active for over 100 years and major digital repositories now contain over 900 collections (referred to as ‘datasets’ in the GIS discipline), compositing this data together to form a comprehensive time lapse of a defined area is surprisingly difficult. Here are a few different freely available resources and their different strengths and weaknesses. 
+While there have been aerial photography initiatives active for over 100 years and there are major digital repositories now contain over 900 datasets, compositing these images together to form a comprehensive time lapse of a defined area with digital platforms is still surprisingly challenging. 
+
+As a test, I was looking to create an aerial time lapse of Moscow with the largest chronological time frame, the best fidelity and any other helpful visual features, such as displaying the dataset that was being used or the dates that the photos were taken for viewer reference.
+
+Here are a few different freely available resources and their different strengths and weaknesses. 
 
 
-**Beginning with a few bad ones** you don’t want to spend your time on (like I did):
+**Starting with platforms with non-functioning elements or difficult to navigate interfaces:**
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
@@ -19,13 +23,13 @@ While there have been aerial photography initiatives active for over 100 years a
   <tr>
     <td style="border: 1px solid black; padding: 8px;">Google Earth Pro</td>
     <td style="border: 1px solid black; padding: 8px;"></td>
-    <td style="border: 1px solid black; padding: 8px;"><li>This desktop version of Google Earth is where some older online references will point you towards for this functionality, but this is an outdated model that Google appears to have abandoned for more contemporary platforms</li> <li>The “Movie Maker” tool that would carry out this action no longer appears to be functional</li></td>
+    <td style="border: 1px solid black; padding: 8px;"><li>This desktop version of Google Earth is where some older online references will point you towards to create aerial time lapse videos, but this appears to be an outdated model that Google seems to have abandoned for more contemporary platforms</li> <li>Specifically, the “Movie Maker” tool that would carry out this action no longer appears to be functional</li></td>
     <td style="border: 1px solid black; padding: 8px;"></td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px;">USGS Earth Explorer</td>
-    <td style="border: 1px solid black; padding: 8px;">If you want to source aerial photographs and put them into a time lapse manually using a resource like Adobe Premiere or After Effects, this database contains material that predates many of the other resources, sometimes as far back as 1950, whereas the others only reach as far back as 1980.</td>
-    <td style="border: 1px solid black; padding: 8px;"><li>As mentioned, only still images can be exported, so the time lapse function and overlaying images need to be done manually</li> <li>Extremely non-intuitive interface.</li></td>
+    <td style="border: 1px solid black; padding: 8px;">If you want to source aerial photographs and put them into a time lapse manually using a resource like Adobe Premiere or After Effects, this database contains material that predates many of the other resources, sometimes as far back as 1950, whereas the other platforms only reach as far back as 1980.</td>
+    <td style="border: 1px solid black; padding: 8px;"><li>Because only still images can be exported, the time lapse function and overlaying images need to be done manually</li> <li>Additionally, as an outsider to GIS, I found the interface unintuitive as well as some of the semantics, including the "footprints" for boundaries and coverage areas, "scenes" for individual images and "cart" for the download list even though most of the images are free to use for non-profit purposes.</li></td>
     <td style="border: 1px solid black; padding: 8px;"></td>
   </tr>
   <tr>
