@@ -4,14 +4,13 @@ nav: Platform Comparison
 gallery: true
 --- 
 
-While there have been aerial photography initiatives active for over 100 years and there are major digital repositories now contain over 900 datasets, compositing these images together to form a comprehensive time lapse of a defined area with digital platforms is still surprisingly challenging. 
+For this survey, I tested each platform by attempting to create an aerial time-lapse of Moscow, focusing on the longest chronological coverage, highest fidelity, and other helpful features like displaying the dataset used and photo dates for viewer reference.
 
-As a test, I was looking to create an aerial time lapse of Moscow with the largest chronological time frame, the best fidelity and any other helpful visual features, such as displaying the dataset that was being used or the dates that the photos were taken for viewer reference.
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
-Here are a few different freely available resources and their different strengths and weaknesses. 
-
-
-**Starting with platforms with non-functioning elements or difficult to navigate interfaces:**
+Here are a few freely available resources and their different strengths and weaknesses, **beginning with platforms with non-functioning elements or difficult to navigate interfaces:**
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
@@ -23,13 +22,13 @@ Here are a few different freely available resources and their different strength
   <tr>
     <td style="border: 1px solid black; padding: 8px;">Google Earth Pro</td>
     <td style="border: 1px solid black; padding: 8px;"></td>
-    <td style="border: 1px solid black; padding: 8px;"><li>This desktop version of Google Earth is where some older online references will point you towards to create aerial time lapse videos, but this appears to be an outdated model that Google seems to have abandoned for more contemporary platforms</li> <li>Specifically, the “Movie Maker” tool that would carry out this action no longer appears to be functional</li></td>
+    <td style="border: 1px solid black; padding: 8px;"><li>This desktop version of Google Earth where some older online references will point you towards to create aerial time lapse videos, but this appears to be an outdated model that Google seems to have abandoned for more contemporary platforms</li> <li>Specifically, the “Movie Maker” tool that would carry out this action no longer appears to be functional</li></td>
     <td style="border: 1px solid black; padding: 8px;"></td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px;">USGS Earth Explorer</td>
-    <td style="border: 1px solid black; padding: 8px;">If you want to source aerial photographs and put them into a time lapse manually using a resource like Adobe Premiere or After Effects, this database contains material that predates many of the other resources, sometimes as far back as 1950, whereas the other platforms only reach as far back as 1980.</td>
-    <td style="border: 1px solid black; padding: 8px;"><li>Because only still images can be exported, the time lapse function and overlaying images need to be done manually</li> <li>Additionally, as an outsider to GIS, I found the interface unintuitive as well as some of the semantics, including the "footprints" for boundaries and coverage areas, "scenes" for individual images and "cart" for the download list even though most of the images are free to use for non-profit purposes.</li></td>
+    <td style="border: 1px solid black; padding: 8px;"><li>This database contains material that predates many of the other resources, sometimes as far back as 1950, whereas the other platforms only reach as far back as 1980.</li></td>
+    <td style="border: 1px solid black; padding: 8px;"><li>Because only still images can be exported, the time lapse functions need to be done manually in another application like Adobe Premier or AfterEffects</li> <li>Additionally, as an outsider to GIS, I found the interface unintuitive as well as some of the semantics, including the "footprints" for boundaries and coverage areas, "scenes" for individual images and "cart" for the download list even though most of the them are free to use for non-profit purposes.</li></td>
     <td style="border: 1px solid black; padding: 8px;"></td>
   </tr>
   <tr>
@@ -37,8 +36,7 @@ Here are a few different freely available resources and their different strength
     <td style="border: 1px solid black; padding: 8px;">
         <ul>
             <li>Very simple to use</li>
-            <li>Good date range, reaching all the way back to 1984 in this example</li>
-            <li>Landmark names help orient the viewer</li>
+            <li>Good date range, reaching all the way back to 1984 in this example task</li>
         </ul>
     </td>
     <td style="border: 1px solid black; padding: 8px;">
@@ -65,7 +63,7 @@ Here are a few different freely available resources and their different strength
             <li>Even more intuitive controls</li>
         </ul>
     </td>
-    <td style="border: 1px solid black; padding: 8px;"><li>Historical reach isn’t very far; only about 10 years depending on the area.</li></td>
+    <td style="border: 1px solid black; padding: 8px;"><li>Historical reach isn’t very far; only about 10 years in this test</li></td>
     <td style="border: 1px solid black; padding: 8px;">
         <ol>
             <li>Enter location</li>
@@ -74,9 +72,28 @@ Here are a few different freely available resources and their different strength
         </ol>
     </td>
   </tr>
+    <tr>
+    <td style="border: 1px solid black; padding: 8px;"><a href="https://livingatlas.arcgis.com/wayback/#active=39767&mapCenter=-116.99564%2C46.73436%2C15&animationSpeed=1000">Google Earth Engine</a></td>
+    <td style="border: 1px solid black; padding: 8px;">
+        <ul>
+            <li>Because the platform runs on whatever Javascript code you create, the platform is a complete sandbox of possibilities where you can create still, moving or interactive maps</li>
+            <li>Utilizes over 1000 public datasets</li>
+            <li>Good documentation, example code and active community</li>
+            <li>Easy exporting directly into Drive folders</li>
+        </ul>
+    </td>
+    <td style="border: 1px solid black; padding: 8px;">
+    <li>Requires knowledge of coding and, even still, can be very difficult and time consuming to iterate code depending on project needs</li>
+    <li>Possibly because of the breadth of material, one frequently encounters errors occurring from combining datasets with differing digital color values, differing metadata and incomplete images</li>
+    </td>
+    <td style="border: 1px solid black; padding: 8px;">
+        <ol>
+            <li>Discussed in the following section!</li>
+        </ol>
+    </td>
+  </tr>
 </table>
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
 </div>
-

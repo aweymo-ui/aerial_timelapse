@@ -12,8 +12,12 @@ gallery: true
 
 ## Conclusion
 
-In conclusion, I hope this has been an insightful comparison of these platforms and their various strengths and weaknesses for researchers of varying technical abilities. If students or faculty reach out for a recommendation for a tool that can use and they only need 20 or so years of coverage, I am very likely to recommend the ArcGIS World Imagery Wayback platform as an extremely intuitive option. 
+I hope this has been an insightful comparison of these platforms and their various strengths and weaknesses. For those needing a tool with around 15 years of coverage, I highly recommend the intuitive ArcGIS World Imagery Wayback platform.
 
-That said, I am personally very interested in creating more work in Google Earth Engine and the seemingly limitless ability you have to produce still, moving and interactive maps. I also feel like I am missing some central concepts of the code that would weed out so many of the false positives, incomplete images and datasets with conflicting color configurations.
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
-Thank you for your time!
+That said, I am personally very interested in creating more work in Google Earth Engine and the seemingly limitless ability you have to produce still, moving and interactive maps. I also feel like I may missing some central concepts of the code that would weed out so many of the false positives, incomplete images and datasets with conflicting color configurations that complicated my first interactions with the platform.
+
+Thank you for your time and feel free to reach out if you have any questions about this survey.

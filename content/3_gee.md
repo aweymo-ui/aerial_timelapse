@@ -4,11 +4,15 @@ nav: Google Earth Engine
 gallery: true
 ---
 
-While I found the learning curve for this resource steep, its adaptability, variety of datasets, and convenient export settings make it an excellent choice for geolocation. Like the USGS Earth Explorer, you'll need to sign a waiver confirming that you'll use the resource for non-profit purposes, but you should gain near-immediate access after signing.
+Like the USGS Earth Explorer, you'll need to sign a waiver confirming that you'll use the resource for non-profit purposes, but you should gain near-immediate access after signing. 
 
-The interface resembles a text editor familiar to those with coding experience. The left pane displays the scripts you've written, along with examples of other scripts you can automatically generate to aid your learning of the programmatic language. You’ll also find the Google Earth Engine documentation here for specific functionalities. The center pane is where you write and run your code, while the right pane features a console that functions as a terminal, displaying error messages and printing data after script execution. The task pane lists the scripts you've run along with their status.
+The interface resembles a text editor: the left pane displays the scripts you've written, along with documentation and examples of code you can plug in to test the platform. The center pane is where you write and run your code, while the right pane features a console that functions as a terminal, displaying error messages and printing data after running the script. The task pane lists the scripts you've run along with their status.
 
-The intention of the code is to create a time lapse over Moscow, ID, covering the longest possible time span.
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
+Here's the code I developed to create a time lapse over Moscow, covering the longest possible time span.
 
 ```
 // Define the center of the 83843 area code in Moscow, Idaho
@@ -23,7 +27,7 @@ var collection = ee.ImageCollection('USDA/NAIP/DOQQ')
   .sort('system:time_start');
   ```
 
-  To start, we will define our geographic perimeter around the 83843 area code. Next, we will specify the dataset to use for creating this visualization. Although Google Earth Engine offers over 900 datasets, I found it challenging to combine them as a beginner, likely due to differences in metadata and color outputs. Therefore, for this script, we will focus solely on the National Agriculture Imagery Program dataset, which dates back to around 1980. 
+  To start, we define our geographic perimeter around the Moscow area code. Next, we will specify the dataset to use for creating this visualization. Here we are focusing solely on the National Agriculture Imagery Program dataset, which goes back to around 1980 and we are doing this due to the many errors I encountered previously attempting to chain together datasets to increase the time frame.
 
   ```
 // Get the earliest image
@@ -65,7 +69,7 @@ if (earliestImage) {
     .sort('system:time_start'); // Ensure chronological order
 ```
 
-Moving ahead, I encountered another complication: not all satellite photographs that capture parts of the area offer complete coverage, leaving distracting gaps in some of the earlier iterations of the code. To address this, I adjusted the code to request only the largest image for each year, ensuring optimal coverage and a better yield of images. A little farther down in the script, we are assembling these images chronologically, from earliest to most recent, and compiling them into a video format for export in red, green, and blue (RGB) color formatting. 
+Moving ahead, I encountered another complication: not all satellite photographs that capture parts of the area offer complete coverage, leaving distracting gaps in some of the earlier iterations of the code. To address this, I adjusted to request only the largest image for each year, ensuring optimal coverage and a better yield of images. A little farther down in the script, we are assembling these images chronologically, from earliest to most recent, and compiling them into a video form for export in red, green, and blue (RGB) color formatting. 
 
 ```
  // Function to prepare images for video export and add date metadata
@@ -93,7 +97,14 @@ Moving ahead, I encountered another complication: not all satellite photographs 
     print('Error:', error);
   });
 ```
-Ideally, I wanted to create code that would automatically overlay the date information onto each photograph, providing viewers with a better frame of reference. However, the best I could achieve was to have this metadata "printed" in the console when the script runs. This data can then be easily added to the frames using video editing software like Adobe Premiere.
+Ideally, I wanted to create code that would automatically overlay the date information onto each photograph, providing viewers with a better frame of reference. However, the best I could achieve was to have this metadata "printed" in the console when the script runs. 
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
+
+This data can then be easily added to the frames using video editing software like Adobe Premiere.
 ```
   // Define video export parameters with increased display time
   var videoParams = {
@@ -121,4 +132,8 @@ Ideally, I wanted to create code that would automatically overlay the date infor
 }
 ```
 
-**Finally**, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you create directly into your Google Drive account. Additionally exported video files can be converted into GIF files and loaded onto project sites like we see on the following page.
+**Finally**, one of the convenient things about working with Google Earth Engine is that you can export videos, images and interactive maps you create directly into your Google Drive account. These exported video files can be converted into GIFs and loaded onto project sites like we see on the following page.
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
