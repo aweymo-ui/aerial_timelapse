@@ -99,11 +99,6 @@ Moving ahead, I encountered another complication: not all satellite photographs 
 ```
 Ideally, I wanted to create code that would automatically overlay the date information onto each photograph, providing viewers with a better frame of reference. However, the best I could achieve was to have this metadata "printed" in the console when the script runs. 
 
-<div class="symbol-container">
-    <p class="symbol">&#10042;</p>
-</div>
-
-
 This data can then be easily added to the frames using video editing software like Adobe Premiere.
 ```
   // Define video export parameters with increased display time

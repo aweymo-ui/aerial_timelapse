@@ -4,7 +4,7 @@ nav: Platform Comparison
 gallery: true
 --- 
 
-For this survey, I tested each platform by attempting to create an aerial time-lapse of Moscow, focusing on the longest chronological coverage, highest fidelity, and other helpful features like displaying the dataset used and photo dates for viewer reference.
+For this survey, I've tested each platform by attempting to create an aerial time-lapse of Moscow, focusing on the longest chronological coverage, highest resolution, and other helpful features like displaying the dataset used or photo dates for viewer reference.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
@@ -22,7 +22,7 @@ Here are a few freely available resources and their different strengths and weak
   <tr>
     <td style="border: 1px solid black; padding: 8px;">Google Earth Pro</td>
     <td style="border: 1px solid black; padding: 8px;"></td>
-    <td style="border: 1px solid black; padding: 8px;"><li>This desktop version of Google Earth where some older online references will point you towards to create aerial time lapse videos, but this appears to be an outdated model that Google seems to have abandoned for more contemporary platforms</li> <li>Specifically, the “Movie Maker” tool that would carry out this action no longer appears to be functional</li></td>
+    <td style="border: 1px solid black; padding: 8px;"><li>This is a desktop version of Google Earth where some older online references will point you towards to create aerial time lapse videos, but this appears to be an outdated model that Google seems to have abandoned for more contemporary platforms</li> <li>Specifically, the “Movie Maker” tool that would carry out this action no longer appears to be functional</li></td>
     <td style="border: 1px solid black; padding: 8px;"></td>
   </tr>
   <tr>
@@ -41,7 +41,7 @@ Here are a few freely available resources and their different strengths and weak
     </td>
     <td style="border: 1px solid black; padding: 8px;">
         <ul>
-            <li>Very poor fidelity</li>
+            <li>Very poor resolution</li>
             <li>No video export functionality</li>
         </ul>
     </td>
@@ -59,7 +59,7 @@ Here are a few freely available resources and their different strengths and weak
     <td style="border: 1px solid black; padding: 8px;"><a href="https://livingatlas.arcgis.com/wayback/#active=39767&mapCenter=-116.99564%2C46.73436%2C15&animationSpeed=1000">ArcGIS World Imagery Wayback</a></td>
     <td style="border: 1px solid black; padding: 8px;">
         <ul>
-            <li>Better fidelity</li>
+            <li>Better resolution</li>
             <li>Even more intuitive controls</li>
         </ul>
     </td>
